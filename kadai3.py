@@ -19,8 +19,7 @@ for datum in data:
             if datum["year"]%4 == 0:
                 UR.append(datum["score"])
 
-print UR
-print avg(UR)
+print "閏年に生まれた観客の平均評価点数は" + str(avg(UR))
 
 NUR = []
 for datum in data:
@@ -31,5 +30,4 @@ for datum in data:
             if datum["year"]%4 != 0:
                 NUR.append(datum["score"])
 
-print NUR
-print avg(NUR)
+print "閏年以外の年に生まれた観客の平均評価点数は" + str(avg(NUR))
